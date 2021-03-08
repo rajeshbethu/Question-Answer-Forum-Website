@@ -1,0 +1,161 @@
+/*==================
+Left-sidebar styles
+  ==================*/
+#active_home{
+    color: #f26c1b;
+}
+
+main{
+    width: 75%;
+    margin: 15px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.left-sidebar{
+    width: 20%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 10px;
+    color: #323335;
+}
+.left-sidebar a{
+    text-decoration: none;
+    color: #636466;
+    display: block;
+    padding: 5px;
+    
+}
+.main-container{
+    width: 56%;
+    margin-right: 4%;
+    border-radius: 2px;
+}
+.main-container a{
+    color: inherit;
+    text-decoration: none;
+}
+.proflie_link{
+    padding: 0!important;
+}
+.proflie_link:hover{
+    text-decoration: underline;
+}
+.right-sidebar{
+    width: 20%;
+}
+.right-sidebar a{
+    text-decoration: none;
+    color: #636466;
+    display: block;
+    padding: 5px;
+}
+@media screen and (min-width: 681px) and (max-width: 900px) {
+    main{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .left-sidebar, .right-sidebar{
+        display: none;
+    }
+    .main-container{
+        width:100%;
+    }
+    .qbox{
+        font-size: 14px;
+    }
+    .auther-img{
+        height: 15%;
+    }
+}
+/*=================
+Styling quetion box
+=================*/
+.qbox{
+    display: flex;
+    flex-direction: column;
+    color: #323335;
+    padding: 15px 15px 0px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.qtop{
+    margin-bottom: 10px;
+}
+.top-text{
+    float: left;
+    margin: 0px;
+    padding-left: 
+}
+.qclose{
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+.qauther{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+    align-items: center;
+    
+}
+.auther-img{
+    max-width: 15%;
+    border-radius: 50%;
+    margin: 0px 0px 0px 0px;
+}
+.prf{
+    width: 84%;
+}
+.prf>p{
+    padding: 0px;
+    margin: 0 0 0 10px;
+}
+.prf-name{
+    font-weight: bold;
+}
+.prf .prf-prof{
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+.qbody{
+    max-height: 150px;
+    overflow: hidden;
+}
+.qbody h4{
+    margin: 10px auto;
+}
+.qbody h4:hover{
+    text-decoration: underline;
+}
+.qfooter{
+    color: #636466;
+}
+.liked{
+    color: #f26c1b!important;
+}
+.footer-link{
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #636466;
+    cursor: pointer;
+    padding: 10px;
+}
+.footer-list{
+    margin-left: 0px;
+    padding-left: 0px;
+    border-top: solid 1px rgba(217, 213, 208, 0.66);
+}
+.footer-link{
+    width: 15%;
+}
+.footer-list .right{
+    text-align: right;
+}
+
+

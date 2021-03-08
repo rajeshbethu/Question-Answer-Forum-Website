@@ -1,0 +1,57 @@
+#active_notify{
+    color: #f26c1b;
+}
+body{
+    background: #fff;
+}
+.main-container{
+    border-radius: 2px;
+    width: 60%;
+    margin: 15px auto 0 auto!important;
+}
+
+.note-item{
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.note-title{
+    margin: 0;
+    padding: 0px 5px 5px 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #736e6e;
+}
+
+.markas a{
+    float: right;
+    text-decoration: none;
+    color: #736e6e;
+    cursor: pointer;
+}
+.markas a:hover{
+    text-decoration: underline;
+}
+.note-link{
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+.note-link a{
+    text-decoration: none;
+    color: #020409e0;
+}
+.note-link a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 681px) and (max-width: 900px) {
+    
+}
+@media screen and (max-width: 680px) {
+    .main-container{
+        width: 98%;
+    }
+}

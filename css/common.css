@@ -1,0 +1,600 @@
+/*=====================To be common in all Pages=======================================*/
+* {box-sizing: border-box;}
+*{
+    outline: none;
+}
+i{
+    cursor: pointer;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #f1f2f2;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+/*navigation styling starts*/
+.nav-container{
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #dedede;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#logo,#account_page_logo{
+    color: #f26c1b;
+    font-weight: 700;
+}
+
+.icon-bar {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    align-items: center;
+}
+.icon-bar .nav-link, .icon-a {
+    text-decoration: none;
+    text-align: center;
+    min-width: 6%; 
+    padding: 12px 0;
+    color: #636466;
+    font-size: 20px;
+}
+.icon-bar .nav-link:hover, .icon-bar .nav-link:focus{
+    color: #f26c1b;
+}
+.search{
+    margin-left: 20px;
+}
+
+#qtn_suggest_container{
+    position: relative;
+}
+#qtn_suggest{
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+}
+.qtn_suggest_item{
+    background: #fff;
+    padding: 5px;
+    margin: 0;
+    display: block;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.qtn_suggest_item a{
+    text-decoration: none;
+    color: inherit;
+}
+.qtn_suggest_item a:hover{
+    text-decoration: underline;
+}
+
+
+
+.search input[type=text] {
+    padding: 6px;
+    margin-top: 0px;
+    font-size: 17px;
+    border: solid 1px #dddddd;
+}
+.search button {
+    padding: 6px 10px;
+    background: #ddd;
+    color: #636466;
+    font-size: 17px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.search button:hover {
+    background: #f26c1b;
+    color: #fff;
+}
+.ask_btn{
+    min-width: 10%; 
+    height: 30px;
+    border: none;
+    background-color: #f26c1b;
+    margin-left: auto;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.footer-link{
+    white-space: nowrap;
+}
+
+.prf .proflie_link{
+    white-space: nowrap;
+}
+#ask_btn_mobile{
+    display: none;
+}
+
+/*navigation styling ends*/
+
+@media screen and (min-width: 681px) and (max-width: 900px) {
+    .icon-bar{
+        width: 95%;
+    }
+    .modal-content3{
+        width: 75%!important;
+        left: 12.5%!important;
+        margin-left: 0!important;
+    }
+}
+@media screen and (max-width: 680px) {
+    #qtn_suggest_container{
+        position: static;
+    }
+    #qtn_suggest{
+        left: 0px;
+        top: 44px;
+    }
+    #logo{
+        display: none;
+    }
+    .nav-container{
+        width: 100%;
+        background-color: #fff;
+        border-bottom: solid 1px #dedede;
+    }
+
+    .icon-bar{
+        position: relative;
+        width: 95%;
+    }
+    .icon-bar .nav-link, .icon-a {
+        text-decoration: none;
+        text-align: center;
+        min-width: 16%; 
+        padding: 8px 0;
+        color: #636466;
+        font-size: 20px;
+        
+    }
+    #search_container{
+        width: 20%;
+    }
+    .search{
+        margin-left: auto;
+    }
+    .search-btn{
+        width: 100%!important;
+    }
+    .search-input{
+        position: absolute;
+        width: 0!important;
+        transition: ease-in-out 0.2s;
+        border: none!important;
+        background: none;
+        padding: 6px!important;
+        margin: 0px!important;
+        font-size: 17px!important;
+        right: 20%!important;
+    }
+    .search:hover  .search-input {
+        width: 80%!important;
+        padding: 0 6px!important;
+        background: #fff!important;
+        border: none!important;
+        margin: 0!important;
+        height: 80%!important;
+    }
+    .search-input:focus{
+        background: #fff!important;
+        border: none !important;
+    }
+    .ask_btn{
+        display: none;
+    }
+    #ask_btn_mobile{
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        background: #fff;
+    }
+    main{
+        width: 98%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-container{
+        margin-right: 0px!important;
+    }
+    .footer-list{
+        margin: 0;
+        display: flex!important;
+        justify-content: space-around!important;
+    }
+    .modal-top3{
+        font-size: 15px!important;
+    }
+    .modal-content3{
+        width: 100%!important;
+        left: 0%!important;
+        margin-left: 0!important;
+    }
+    .modal-body3 .askqtn{
+        font-size: 14px!important;
+    }
+    .modal-body3 .kwords{
+        font-size: 14px!important;
+    }
+    .submit3{
+        width: 100%!important;
+    }
+}
+.profile-drop{
+    cursor: pointer;
+    position: relative;
+}
+.profile-drop:hover #proflie-drop-content{
+    display: block;
+    overflow: visible!important;
+    z-index: 5;
+    visibility: visible;
+}
+
+#proflie-drop-content{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -45px;
+    max-height: 250px;
+    margin: 0;
+    width: 150px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 7px 0 #b6bec1;
+    background: #fff;
+    z-index: 5;
+}
+#proflie-drop-content a{
+    display: block;
+    z-index: 5;
+}
+.drop-item:hover{
+    color: #f26c1b;
+}
+#logout-btn:hover{
+    color: #f26c1b;
+}
+.drop-item{
+    text-decoration: none;
+    font-size: 17px;
+    color: #636466;
+    border-bottom: 1px solid #e0ddd9;
+    padding: 5px 0;
+}
+.logout{
+    padding: 5px 0px;
+    background: none;
+    border: none;
+    color: #636466;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.logout:hover{
+    cursor: pointer;
+}
+
+
+
+/*==========Login and signup Modal css=============*/
+.modal {
+        /*display: none;*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        z-index: 10;
+        background-color: #f1f2f2;
+    }
+    .modals-container{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-top: 5%;
+    }
+    .modal-content, .modal-content2{
+        background-color: #fff;
+        /*position: absolute;*/
+        width: 50%;
+        /*left: 50%;*/
+        padding: 15px;
+        margin-right: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .modal-top, .modal-top2{
+        display: flex;
+        padding: 0 10px 10px 10px;
+        color: #636466;
+        font-size: 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #d3d4d6;
+    }
+    .close-icon, .close-icon2{
+        margin-left: auto;
+    }
+    .modal-body, .modal-body2{
+        padding: 0 10px 10px 10px;
+    }
+    .modal-body .lemail, .modal-body .lpwd, .modal-body2 .rname, .modal-body2 .uname, .modal-body2 .remail, .modal-body2 .rpwd{
+        margin: 10px 0px;
+        border: 1px solid #ddd;
+        padding: 5px 2px;
+        font-size: 17px;
+        width: 100%;
+        background: transparent;
+    }
+    .submit, .submit2{
+        display: block;
+        padding: 8px;
+        width: 150px;
+        background: #f26c1b;
+        outline: none;
+        border: none;
+        margin: 10px auto 0px auto;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .close-icon,.close-icon2{
+        cursor: pointer;
+    }
+.error-text{
+    margin: 0px;
+    display: none;
+}
+#signup-info{
+    margin: 0px;
+    padding: 0px;
+    /*display: none;*/
+}
+/*==========Login and signup Modal css Ends=============*/
+
+/*==========Ask Qtn Modal css=============*/
+.modal3{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content3{
+    background-color: #f1f2f2;
+    position: absolute;
+    top: 6%;
+    width: 50%;
+    margin-left: -25%;
+    left: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    border-radius: 5px;
+    /*box-shadow: 0px 0px 0px 0 #b6bec1;*/
+}
+.modal-top3{
+    display: flex;
+    padding: 0 10px 10px 10px;
+    color: #636466;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #d3d4d6;
+}
+.close-icon3{
+    margin-left: auto;
+}
+.modal-body3{
+    padding: 0 10px 10px 10px;
+}
+.modal-body3 .askqtn{
+    display: block;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    border: none;
+    padding: 5px 2px;
+    font-size: 17px;
+    background: transparent;
+    resize: none;
+}
+
+.modal-body3 .kwords{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    padding: 5px 2px;
+    font-size: 17px;
+    background: transparent;
+    resize: none;
+}
+#qtn-error{
+    display: none;
+    margin: 0px 0px 15px 0px;
+}
+.submit3{
+    display: block;
+    padding: 8px;
+    width: 150px;
+    background: #f26c1b;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-icon3{
+    cursor: pointer;
+}
+/*==========ask Modal css Ends=============*/
+
+/*==========Request modal css=============*/
+.modal4{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content4{
+    background-color: #f1f2f2;
+    position: absolute;
+    top: 6%;
+    width: 50%;
+    height: 80%;
+    margin-left: -25%;
+    left: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    border-radius: 5px;
+    /*box-shadow: 0px 0px 20px 0 #b6bec1;*/
+}
+.modal-top4{
+    display: flex;
+    color: #636466;
+    font-size: 20px;
+    font-weight: bold;
+    /*border-bottom: 1px solid #d3d4d6;*/
+}
+.modal-top4 span{
+    padding: 0px 10px 10px 10px;
+}
+.close-icon4{
+    margin-left: auto;
+}
+.modal-body4{
+    /*padding: 0 10px 10px 10px;*/
+    height: 80%;
+}
+.modal-body4 .rqst{
+    display: block;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    background: #fff;
+    resize: none;
+    border-radius: 5px;
+    /*border-bottom: 1px solid #ddd;*/
+}
+.submit4{
+    display: block;
+    padding: 8px;
+    width: 150px;
+    background: #f26c1b;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-icon4{
+    cursor: pointer;
+}
+#name_sug{
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 17px;    
+}
+#suggestions_container{
+    position: relative;
+    height: 80%;
+
+}
+#suggestions{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.sug_list{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+.sug_list:first-child{
+    border-top: 1px solid #ddd;
+}
+#rqst_icon{
+    margin-left: auto;
+    cursor: pointer;
+}
+#added_sugns{
+    padding: 10px;
+}
+.account_page_submit{
+    width: 100%;
+}
+
+@media screen and (min-width: 681px) and (max-width: 900px){
+    #both_modals{
+        width: 98%;
+    }
+    .account_page_submit{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px){
+    .account_page{
+        width: 98%;
+    }
+    #both_modals{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #login_modal{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    #signup_modal{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .account_page_submit{
+        width: 100%;
+    }
+}
+
+
+/*==========Request modal css ends=============*/
+
+
+/*=====================To be common in all Pages=======================================*/
